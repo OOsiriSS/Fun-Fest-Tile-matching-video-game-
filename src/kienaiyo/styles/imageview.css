@@ -1,0 +1,100 @@
+.root{
+	scale:1.15;
+	-fx-background-image:url(file:imgs/background.png);
+}
+
+#noEffect{
+	-fx-effect:innershadow(three-pass-box,rgba(225,225,225,1),6,0.5,3,3) ;
+}
+
+#hElim{
+	-fx-effect:innershadow(three-pass-box,rgba(225,225,225,1),6,0.5,3,3) ;
+}
+
+#vElim{
+	-fx-effect:innershadow(three-pass-box,rgba(225,225,225,1),6,0.5,3,3) ;
+}
+
+#bElim{
+	-fx-effect:innershadow(three-pass-box,rgba(225,225,225,1),6,0.5,3,3) ;
+}
+
+#sElim{
+	-fx-effect:innershadow(three-pass-box,rgba(225,225,225,1),6,0.5,3,3) ;
+}
+
+#noEffect:hover{
+	-fx-scale-x:scale;
+	-fx-scale-y:scale;
+}
+
+#hElim:hover{
+	 -fx-scale-x:scale;
+	-fx-scale-y:scale;
+}
+
+#vElim:hover{
+	 -fx-scale-x:scale;
+	-fx-scale-y:scale;
+}
+
+#bElim:hover{
+	 -fx-scale-x:scale;
+	-fx-scale-y:scale;
+}
+
+#sElim:hover{
+	 -fx-scale-x:scale;
+	-fx-scale-y:scale;
+}
+
+#noEffect:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#hElim:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#vElim:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#bElim:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#sElim:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#back:hover{
+	-fx-effect:dropshadow(one-pass-box,#000000,6,0,5,5) ;
+ 	-fx-scale-x:1.2;
+ 	-fx-scale-y:1.2;
+ 	-fx-cursor:hand ;
+}
+
+#back:pressed{
+	-fx-scale-x:1.0;
+ 	-fx-scale-y:1.0;
+}
+
+#gadgets:hover{
+	-fx-effect:dropshadow(one-pass-box,#000000,6,0,5,5) ;
+ 	-fx-scale-x:1.2;
+ 	-fx-scale-y:1.2;
+ 	-fx-cursor:hand ;
+}
+
+#gadgets:pressed{
+	-fx-scale-x:1.0;
+ 	-fx-scale-y:1.0;
+}
+
+

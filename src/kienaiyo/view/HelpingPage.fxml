@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="544.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kienaiyo.view.helpingpageController">
+   <children>
+      <ImageView fitHeight="544.0" fitWidth="678.0">
+         <image>
+            <Image url="@../../../imgs/background.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="102.0" layoutY="138.0" prefWidth="489.0" text="至少三个相同的色块成同一直线（横竖都可）就可以消除并产生分数" wrapText="true">
+         <font>
+            <Font name="Microsoft JhengHei" size="24.0" />
+         </font></Label>
+      <Label layoutX="102.0" layoutY="70.0" text="点击第一个图案">
+         <font>
+            <Font name="Microsoft JhengHei" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="104.0" text="再点击第二个图案即可使其互换位置">
+         <font>
+            <Font name="Microsoft JhengHei" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="288.0" text="必须要有能消除的图案才能交换成功！">
+         <font>
+            <Font name="Microsoft JhengHei" size="24.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="102.0" layoutY="206.0">
+         <image>
+            <Image url="@../../../imgs/help1.gif" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="102.0" layoutY="322.0">
+         <image>
+            <Image url="@../../../imgs/help2.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="back" layoutY="444.0" onMouseClicked="#back">
+         <image>
+            <Image url="@../../../imgs/menu.png" />
+         </image>
+      </ImageView>
+      <ImageView id="back" layoutX="100.0" layoutY="437.0" onMouseClicked="#next">
+         <image>
+            <Image url="@../../../imgs/next.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

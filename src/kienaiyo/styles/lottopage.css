@@ -1,0 +1,27 @@
+.root{
+	-fx-background-image:url(file:imgs/background.png) ;
+	scale:1.15;
+}
+
+#g:hover{
+	-fx-scale-x:scale;
+	-fx-scale-y:scale;
+	-fx-cursor:hand ;
+}
+
+#g:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#back:hover{
+	-fx-effect:dropshadow(one-pass-box,#000000,6,0,5,5) ;
+ 	-fx-scale-x:1.2;
+ 	-fx-scale-y:1.2;
+ 	-fx-cursor:hand;
+}
+
+#back:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}

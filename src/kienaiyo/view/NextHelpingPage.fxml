@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="544.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kienaiyo.view.nexthelpingpageController">
+   <children>
+      <ImageView fitHeight="544.0" fitWidth="678.0">
+         <image>
+            <Image url="@../../../imgs/background.png" />
+         </image>
+      </ImageView>
+      <ImageView id="menu" layoutY="444.0" onMouseClicked="#backtohome">
+         <image>
+            <Image url="@../../../imgs/menu.png" />
+         </image>
+      </ImageView>
+      <ImageView id="back" layoutX="102.0" layoutY="436.0" onMouseClicked="#back">
+         <image>
+            <Image url="@../../../imgs/back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="43.0" text="特殊方块">
+         <font>
+            <Font name="Microsoft JhengHei" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#3300ff" />
+                  <Stop color="#ffc300" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="74.0" layoutY="119.0" text="一次性消除多于3个方块时，即会产生特殊方块：">
+         <font>
+            <Font name="Microsoft JhengHei" size="24.0" />
+         </font>
+      </Label>
+      <Group>
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="96.0" layoutY="168.0">
+               <image>
+                  <Image url="@../../../imgs/fenekku_H.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="146.0" layoutY="168.0">
+               <image>
+                  <Image url="@../../../imgs/kaban_H.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="196.0" layoutY="168.0">
+               <image>
+                  <Image url="@../../../imgs/lucky_H.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="246.0" layoutY="168.0">
+               <image>
+                  <Image url="@../../../imgs/raion_H.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="346.0" layoutY="168.0">
+               <image>
+                  <Image url="@../../../imgs/toki_H.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="296.0" layoutY="168.0">
+               <image>
+                  <Image url="@../../../imgs/sa-baru_H.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutY="-1.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="246.0" layoutY="260.0">
+               <image>
+                  <Image url="@../../../imgs/raion_V.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="146.0" layoutY="260.0">
+               <image>
+                  <Image url="@../../../imgs/kaban_V.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="346.0" layoutY="260.0">
+               <image>
+                  <Image url="@../../../imgs/toki_V.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="196.0" layoutY="260.0">
+               <image>
+                  <Image url="@../../../imgs/lucky_V.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="296.0" layoutY="260.0">
+               <image>
+                  <Image url="@../../../imgs/sa-baru_V.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="96.0" layoutY="260.0">
+               <image>
+                  <Image url="@../../../imgs/fenekku_V.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group>
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="346.0" layoutY="356.0">
+               <image>
+                  <Image url="@../../../imgs/toki_B.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="246.0" layoutY="356.0">
+               <image>
+                  <Image url="@../../../imgs/raion_B.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="146.0" layoutY="356.0">
+               <image>
+                  <Image url="@../../../imgs/kaban_B.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="196.0" layoutY="356.0">
+               <image>
+                  <Image url="@../../../imgs/lucky_B.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="296.0" layoutY="356.0">
+               <image>
+                  <Image url="@../../../imgs/sa-baru_B.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="96.0" layoutY="356.0">
+               <image>
+                  <Image url="@../../../imgs/fenekku_B.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="553.0" layoutY="193.0">
+         <image>
+            <Image url="@../../../imgs/S.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="96.0" layoutY="229.0" text="横向消除：横向连续4个消除时产生，消除时可消除整行" />
+      <Label layoutX="96.0" layoutY="322.0" text="纵向消除：纵向连续4个消除时产生，消除时可消除整列" />
+      <Label layoutX="96.0" layoutY="426.0" text="炸弹：5个相同方块成L型或T型消除时产生，消除时可消除以其为中心的3*3格" />
+      <Label layoutX="489.0" layoutY="249.0" prefHeight="100.0" prefWidth="179.0" text="万能方块：连续5个消除时产生，可与任意方块交换，交换后消除板块内所有该种方块" wrapText="true" />
+   </children>
+</AnchorPane>

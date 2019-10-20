@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="254.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kienaiyo.view.lottoresultpageController">
+   <children>
+      <Button layoutX="376.0" layoutY="200.0" mnemonicParsing="false" onAction="#OKhandle" prefHeight="34.0" prefWidth="67.0" text="OK" />
+      <Text fx:id="prompt" layoutX="57.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="231.3203125">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

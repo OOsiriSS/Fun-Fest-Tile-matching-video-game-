@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="main" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kienaiyo.view.newsavepageController">
+   <children>
+      <Text layoutX="187.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Save">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.4780487804878049" startY="0.5024390243902439">
+               <stops>
+                  <Stop color="#29ed13" />
+                  <Stop color="#0e8fed" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <GridPane layoutX="20.0" layoutY="71.0" prefHeight="83.0" prefWidth="459.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="110.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="405.0" minWidth="10.0" prefWidth="349.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Save Name" textAlignment="CENTER" wrappingWidth="100.921875" />
+            <TextField fx:id="saveName" onKeyPressed="#enterPlayerName" prefHeight="0.0" prefWidth="349.0" promptText="New Game" GridPane.columnIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name" GridPane.rowIndex="1" />
+            <TextField fx:id="playerName" onKeyPressed="#enterGame" prefHeight="23.0" prefWidth="349.0" promptText="Player" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button layoutX="56.0" layoutY="176.0" mnemonicParsing="false" onAction="#okHandle" prefHeight="34.0" prefWidth="156.0" text="Create and play" />
+      <Button layoutX="293.0" layoutY="176.0" mnemonicParsing="false" onAction="#cancelHandle" prefHeight="34.0" prefWidth="156.0" text="Cancel" />
+   </children>
+</AnchorPane>

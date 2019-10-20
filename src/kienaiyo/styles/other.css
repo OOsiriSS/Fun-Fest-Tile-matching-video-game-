@@ -1,0 +1,72 @@
+.root{
+	-fx-background-image:url(file:imgs/background.png) 
+}
+
+#start:hover{
+ 	-fx-font-size:40pt;
+ 	-fx-cursor:hand ;
+}
+
+#start:pressed{
+	-fx-font-size:38pt;
+}
+
+#help:hover{
+	-fx-effect:dropshadow(one-pass-box,#000000,6,0,5,5) ;
+ 	-fx-scale-x:1.2;
+ 	-fx-scale-y:1.2;
+ 	-fx-cursor:hand ;
+}
+
+#help:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#exit:hover{
+	-fx-effect:dropshadow(one-pass-box,#000000,6,0,5,5) ;
+ 	-fx-scale-x:1.2;
+ 	-fx-scale-y:1.2;
+ 	-fx-cursor:hand ;
+}
+
+#exit:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#back:hover{
+	-fx-effect:dropshadow(one-pass-box,#000000,6,0,5,5) ;
+ 	-fx-scale-x:1.2;
+ 	-fx-scale-y:1.2;
+ 	-fx-cursor:hand;
+}
+
+#back:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#menu:hover{
+	-fx-effect:dropshadow(one-pass-box,#000000,6,0,5,5) ;
+ 	-fx-scale-x:1.2;
+ 	-fx-scale-y:1.2;
+ 	-fx-cursor:hand ;
+}
+
+#menu:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
+
+#replay:hover{
+	-fx-effect:dropshadow(one-pass-box,#000000,6,0,5,5) ;
+ 	-fx-scale-x:1.2;
+ 	-fx-scale-y:1.2;
+ 	-fx-cursor:hand ;
+}
+
+#replay:pressed{
+	-fx-scale-x:1.0;
+	-fx-scale-y:1.0;
+}
