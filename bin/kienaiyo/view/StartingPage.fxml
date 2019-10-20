@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kienaiyo.view.startingpageController">
+   <children>
+      <ImageView fitHeight="544.0" fitWidth="678.0">
+         <image>
+            <Image url="@../../../imgs/background.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="152.0" layoutY="157.0" stroke="#6ef50c" strokeType="OUTSIDE" text="Fun Fest" textAlignment="CENTER" wrappingWidth="385.3203125">
+         <font>
+            <Font name="Arial Bold Italic" size="89.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5057142857142857" centerY="0.5" radius="0.5740740740740741">
+               <stops>
+                  <Stop color="#07f0ac" />
+                  <Stop color="#4e0af8" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text id="start" fill="RED" layoutX="128.0" layoutY="307.0" onMouseClicked="#startGame" strokeType="OUTSIDE" strokeWidth="0.0" text="Click here to start!">
+         <font>
+            <Font name="Arial Bold Italic" size="48.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" color="#f2a8a8" offsetX="2.0" offsetY="3.0" />
+         </effect>
+      </Text>
+      <Label id="back" layoutX="530.0" layoutY="416.0" onMouseClicked="#exitgame">
+         <graphic>
+            <ImageView id="exit" onMouseClicked="#exitgame">
+               <image>
+                  <Image url="@../../../imgs/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

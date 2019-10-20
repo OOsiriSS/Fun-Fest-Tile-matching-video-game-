@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="544.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kienaiyo.view.endingpageController">
+   <children>
+      <ImageView fitHeight="544.0" fitWidth="678.0">
+         <image>
+            <Image url="@../../../imgs/background.png" />
+         </image>
+      </ImageView>
+
+      <Label fx:id="score" layoutX="165.0" layoutY="199.0" text="Score:">
+         <font>
+            <Font name="Consolas" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="66.0" text="GAME OVER">
+         <font>
+            <Font name="Ebrima" size="64.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5397727272727273" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f7ff0a" />
+                  <Stop color="#ff5b00" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Text id="replay" fill="RED" layoutX="244.0" layoutY="357.0" onMouseClicked="#saveandreplay" strokeType="OUTSIDE" strokeWidth="0.0" text="REPLAY!">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="48.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" color="#ffb2b2" offsetX="2.0" offsetY="3.0" />
+         </effect>
+      </Text>
+      <Label id="back" layoutX="384.0" layoutY="396.0" onMouseClicked="#saveandbacktohome">
+         <graphic>
+            <ImageView id="menu" fitHeight="93.0" fitWidth="100.0" onMouseClicked="#saveandbacktohome">
+               <image>
+                  <Image url="@../../../imgs/menu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label id="back" layoutX="484.0" layoutY="393.0" onMouseClicked="#saveandexit">
+         <graphic>
+            <ImageView id="exit" onMouseClicked="#saveandexit">
+               <image>
+                  <Image url="@../../../imgs/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="544.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kienaiyo.view.shophelpingpageController">
+   <children>
+      <ImageView fitHeight="544.0" fitWidth="678.0">
+         <image>
+            <Image url="@../../../imgs/background.png" />
+         </image>
+      </ImageView>
+      <Group layoutX="-23.0" layoutY="-15.0">
+         <children>
+            <ImageView fitHeight="56.0" fitWidth="63.0" layoutX="124.0" layoutY="171.0">
+               <image>
+                  <Image url="@../../../imgs/reset.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="493.0" layoutY="51.0" prefHeight="75.0" prefWidth="165.0" text="交换两个方块的位置" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="259.0" prefHeight="111.0" prefWidth="165.0" text="赋予一个方块随机特效（除万能）" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="71.0" text="消除一个方块">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="67.0" fitWidth="84.0" layoutX="393.0" layoutY="166.0">
+               <image>
+                  <Image url="@../../../imgs/plus_5.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="206.0" layoutY="374.0" prefHeight="75.0" prefWidth="165.0" text="赋予一个方块万能特效" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="267.0" prefHeight="75.0" prefWidth="165.0" text="撤销上次操作" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="56.0" fitWidth="63.0" layoutX="403.0" layoutY="383.0">
+               <image>
+                  <Image url="@../../../imgs/change.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="84.0" layoutX="393.0" layoutY="276.0">
+               <image>
+                  <Image url="@../../../imgs/reverse.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="493.0" layoutY="362.0" prefHeight="111.0" prefWidth="165.0" text="将一个方块随机变换为某种方块" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="162.0" prefHeight="75.0" prefWidth="165.0" text="增加5步" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="162.0" prefHeight="75.0" prefWidth="165.0" text="重新排列所有方块" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="124.0" layoutY="270.0">
+               <image>
+                  <Image url="@../../../imgs/magic.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="124.0" layoutY="377.0">
+               <image>
+                  <Image url="@../../../imgs/magic_S.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="40.0" layoutX="135.0" layoutY="61.0" rotate="35.5">
+               <image>
+                  <Image url="@../../../imgs/hammer.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="403.0" layoutY="54.0">
+               <image>
+                  <Image url="@../../../imgs/replace.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <ImageView id="back" layoutY="444.0" onMouseClicked="#backtoshop">
+         <image>
+            <Image url="@../../../imgs/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

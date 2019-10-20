@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="boss" prefHeight="544.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kienaiyo.view.shoppageController">
+   <children>
+      <ImageView fitHeight="544.0" fitWidth="678.0">
+         <image>
+            <Image url="@../../../imgs/background.png" />
+         </image>
+      </ImageView>
+      <Button focusTraversable="false" layoutX="273.0" layoutY="456.0" mnemonicParsing="false" text="sell" />
+      <Button focusTraversable="false" layoutX="51.0" layoutY="456.0" mnemonicParsing="false" text="buy daily discount" />
+      <Button focusTraversable="false" layoutX="408.0" layoutY="456.0" mnemonicParsing="false" onAction="#toLottoPage" text="lotto" />
+      <ImageView id="back" layoutX="564.0" layoutY="444.0" onMouseClicked="#backtohome">
+         <image>
+            <Image url="@../../../imgs/menu.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="42.0" layoutY="264.0" spacing="30.0" />
+      <GridPane layoutX="24.0" layoutY="94.0" prefHeight="314.0" prefWidth="650.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="164.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="166.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" prefWidth="163.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="157.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="152.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="164.0" minHeight="8.0" prefHeight="153.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Group GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <children>
+                  <ImageView id="chuizi" fitHeight="66.0" fitWidth="52.0" layoutX="-16.0" layoutY="-77.0" pickOnBounds="true" rotate="35.5">
+                     <image>
+                        <Image url="@../../../imgs/hammer.png" />
+                     </image>
+                  </ImageView>
+                  <Button contentDisplay="CENTER" focusTraversable="false" layoutX="31.0" layoutY="17.0" mnemonicParsing="false" onAction="#buy" prefHeight="23.0" prefWidth="41.0" text="购入">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="-53.0" layoutY="-94.0" prefHeight="18.0" prefWidth="28.0" text="单价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="price" layoutX="-15.0" layoutY="-92.0" text="500">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="-8.0" text="数量">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="21.0" text="总价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField focusTraversable="false" layoutX="-3.0" layoutY="-12.0" onKeyReleased="#checkInput" prefHeight="23.0" prefWidth="48.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label id="totalPrice" layoutX="-25.0" layoutY="21.0" prefHeight="15.0" prefWidth="55.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button contentDisplay="CENTER" focusTraversable="false" layoutX="-25.0" layoutY="-12.0" mnemonicParsing="false" onAction="#minus1" pickOnBounds="false" prefHeight="23.0" prefWidth="21.0" text="-">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button contentDisplay="CENTER" focusTraversable="false" layoutX="46.0" layoutY="-12.0" mnemonicParsing="false" onAction="#add1" prefHeight="23.0" prefWidth="21.0" text="+">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+            <Group GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <children>
+                  <ImageView id="violentExch" fitHeight="66.0" fitWidth="67.0" layoutX="-24.0" layoutY="-80.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../imgs/replace.png" />
+                     </image>
+                  </ImageView>
+                  <Button focusTraversable="false" layoutX="31.0" layoutY="17.0" mnemonicParsing="false" onAction="#buy" prefHeight="23.0" prefWidth="41.0" text="购入">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="-53.0" layoutY="-94.0" prefHeight="18.0" prefWidth="28.0" text="单价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="price" layoutX="10.0" layoutY="-93.0" text="1000">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="-8.0" text="数量">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="21.0" text="总价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField focusTraversable="false" layoutX="-3.0" layoutY="-12.0" prefHeight="23.0" prefWidth="48.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label id="totalPrice" layoutX="-25.0" layoutY="21.0" prefHeight="15.0" prefWidth="55.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button focusTraversable="false" layoutX="-25.0" layoutY="-12.0" mnemonicParsing="false" onAction="#minus1" prefHeight="23.0" prefWidth="21.0" text="-">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button focusTraversable="false" layoutX="46.0" layoutY="-12.0" mnemonicParsing="false" onAction="#add1" prefHeight="23.0" prefWidth="21.0" text="+">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+            <Group GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <children>
+                  <ImageView id="randomEff" fitHeight="66.0" fitWidth="67.0" layoutX="-24.0" layoutY="-80.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../imgs/magic.png" />
+                     </image>
+                  </ImageView>
+                  <Button focusTraversable="false" layoutX="31.0" layoutY="17.0" mnemonicParsing="false" onAction="#buy" prefHeight="23.0" prefWidth="41.0" text="购入">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="-53.0" layoutY="-94.0" prefHeight="18.0" prefWidth="28.0" text="单价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="price" layoutX="10.0" layoutY="-93.0" text="1500">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="-8.0" text="数量">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="21.0" text="总价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField focusTraversable="false" layoutX="-3.0" layoutY="-12.0" prefHeight="23.0" prefWidth="48.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label id="totalPrice" layoutX="-25.0" layoutY="21.0" prefHeight="15.0" prefWidth="55.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button focusTraversable="false" layoutX="-25.0" layoutY="-12.0" mnemonicParsing="false" onAction="#minus1" prefHeight="23.0" prefWidth="21.0" text="-">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button focusTraversable="false" layoutX="46.0" layoutY="-12.0" mnemonicParsing="false" onAction="#add1" prefHeight="23.0" prefWidth="21.0" text="+">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+            <Group GridPane.columnIndex="3" GridPane.halignment="CENTER">
+               <children>
+                  <ImageView id="sameEff" fitHeight="66.0" fitWidth="67.0" layoutX="-24.0" layoutY="-78.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../imgs/magic_S.png" />
+                     </image>
+                  </ImageView>
+                  <Button focusTraversable="false" layoutX="31.0" layoutY="17.0" mnemonicParsing="false" onAction="#buy" prefHeight="23.0" prefWidth="41.0" text="购入">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="-53.0" layoutY="-94.0" prefHeight="18.0" prefWidth="28.0" text="单价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="price" layoutX="-15.0" layoutY="-92.0" text="3000">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="-8.0" text="数量">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="21.0" text="总价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField focusTraversable="false" layoutX="-3.0" layoutY="-12.0" prefHeight="23.0" prefWidth="48.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label id="totalPrice" layoutX="-25.0" layoutY="21.0" prefHeight="15.0" prefWidth="55.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button focusTraversable="false" layoutX="-25.0" layoutY="-12.0" mnemonicParsing="false" onAction="#minus1" prefHeight="23.0" prefWidth="21.0" text="-">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button focusTraversable="false" layoutX="46.0" layoutY="-12.0" mnemonicParsing="false" onAction="#add1" prefHeight="23.0" prefWidth="21.0" text="+">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+            <Group GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <children>
+                  <ImageView id="plus5steps" fitHeight="56.0" fitWidth="67.0" layoutX="-24.0" layoutY="-78.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../imgs/plus_5.png" />
+                     </image>
+                  </ImageView>
+                  <Button focusTraversable="false" layoutX="31.0" layoutY="17.0" mnemonicParsing="false" onAction="#buy" prefHeight="23.0" prefWidth="41.0" text="购入">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="-53.0" layoutY="-94.0" prefHeight="18.0" prefWidth="28.0" text="单价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="price" layoutX="-15.0" layoutY="-92.0" text="1000">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="-8.0" text="数量">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="21.0" text="总价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField focusTraversable="false" layoutX="-3.0" layoutY="-12.0" prefHeight="23.0" prefWidth="48.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label id="totalPrice" layoutX="-25.0" layoutY="21.0" prefHeight="15.0" prefWidth="55.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button focusTraversable="false" layoutX="-25.0" layoutY="-12.0" mnemonicParsing="false" onAction="#minus1" prefHeight="23.0" prefWidth="21.0" text="-">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button focusTraversable="false" layoutX="46.0" layoutY="-12.0" mnemonicParsing="false" onAction="#add1" prefHeight="23.0" prefWidth="21.0" text="+">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+            <Group GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <children>
+                  <ImageView id="refresh" fitHeight="62.0" fitWidth="67.0" layoutX="-24.0" layoutY="-78.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../imgs/reset.png" />
+                     </image>
+                  </ImageView>
+                  <Button focusTraversable="false" layoutX="31.0" layoutY="17.0" mnemonicParsing="false" onAction="#buy" prefHeight="23.0" prefWidth="41.0" text="购入">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="-53.0" layoutY="-94.0" prefHeight="18.0" prefWidth="28.0" text="单价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="price" layoutX="-15.0" layoutY="-92.0" text="2500">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="-8.0" text="数量">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-53.0" layoutY="21.0" text="总价">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField focusTraversable="false" layoutX="-3.0" layoutY="-12.0" prefHeight="23.0" prefWidth="48.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label id="totalPrice" layoutX="-25.0" layoutY="21.0" prefHeight="15.0" prefWidth="55.0" text="0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button focusTraversable="false" layoutX="-25.0" layoutY="-12.0" mnemonicParsing="false" onAction="#minus1" prefHeight="23.0" prefWidth="21.0" text="-">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button focusTraversable="false" layoutX="46.0" layoutY="-12.0" mnemonicParsing="false" onAction="#add1" prefHeight="23.0" prefWidth="21.0" text="+">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+         </children>
+      </GridPane>
+      <Text layoutX="169.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHOP here!Buy your tools!" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold Italic" size="28.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#0051ffd4" />
+                  <Stop color="#a100ffb9" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Group layoutX="42.0" layoutY="41.0">
+         <children>
+            <ImageView rotate="-44.4">
+               <image>
+                  <Image url="@../../../imgs/gold.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="coin" layoutX="24.0" layoutY="5.0" prefHeight="22.0" prefWidth="122.0" />
+         </children>
+      </Group>
+      <Label id="back" layoutX="502.0" layoutY="444.0" onMouseClicked="#shophelp">
+         <graphic>
+            <ImageView id="back" fitHeight="84.0" fitWidth="55.0" onMouseClicked="#shophelp">
+               <image>
+                  <Image url="@../../../imgs/help.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>
